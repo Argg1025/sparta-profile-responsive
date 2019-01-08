@@ -1,21 +1,22 @@
 body{
-    background: url(../images/nathan-dumlao-1272742-unsplash.jpg) no-repeat center fixed;
+    background: url(../images/paul-gilmore-1272889-unsplash.jpg) no-repeat center fixed;
     height: 100%; 
     background-size: cover;
-    /* display: flex; */
     flex-direction: column;
     padding:10px;
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
 }
 .skills{
 
-    background: green;
+    background-image:linear-gradient(to right, #2CEAA3, #28965A);
     padding-left: 10px;
-    border: 2px solid black;
-    /* margin-top:170px; */
+    border: 2px solid rgb(62, 32, 196);
     width:99%;
 }
 
-.topflex, .skillists {
+ .skillists {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,6 +26,7 @@ body{
     display: flex;
     flex-direction: row;
     width:100%;
+    margin-top: 70px;
 }
 
 .top{
@@ -36,10 +38,9 @@ body{
 }
 .namesum{
     padding-left: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(62, 32, 196);
     margin: 10px;
-    background: green;
-    height:32%;
+    background-image:linear-gradient(to right, #2CEAA3, #28965A);
     margin-top:20px;
 }
 img{
@@ -65,15 +66,20 @@ h3{
 }
 
 .ex {
-    border: solid black 3px;
+    border: solid rgb(62, 32, 196) 3px;
     text-overflow: auto;
+    width:56%;
+
 }
 .ed{
-    border: solid black 3px;
+    border: solid rgb(62, 32, 196) 3px;
     text-overflow: auto;
 }
 .ed p, .ex p {
     padding:15px;
+}
+.ex p{
+    margin-top:-20px;
 }
 ul{
     margin:30px;
@@ -83,23 +89,21 @@ li{
     margin:10px;
 }
 .ed, .ex{
-    height:300px;
-    background:green;
+
+    background-image:linear-gradient(to right, #2CEAA3, #28965A);
 }
-.bottom{
-    margin-top: 70px;
-}
+
 @media (max-width:1425px){
-    .bottom {
+    .bottom, .skills, .top{
         flex-direction:column;
     }
     .ed, .ex{
         height: auto;
-        width: auto;
+        width: 100%;;
     }
 
     .skills {
-        margin:auto;
+        width:100%;
     }
 
     .skillists {
@@ -118,5 +122,13 @@ img:hover {
 }
 .name{
     margin-top:20px;
+    color:black;
+    text-shadow: 1px 1px 4px rgb(62, 32, 196);
+}
+.name, .sum, .summary, .skilltitle, li, h3, .edex{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li{
+    font-size:25px;
 }
 
